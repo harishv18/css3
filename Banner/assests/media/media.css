@@ -1,0 +1,25 @@
+@media(max-width:768px) {
+  main {
+    background-color: green;
+  }
+  nav {
+    float: none;
+    text-align: center;
+  }
+  img {
+    height: 300px;
+  }
+}
+
+@media(min-width: 769px) and (max-width:1200px) {
+  header {
+    background-color: skyblue;
+    padding: 20px;
+  }
+  header > nav {
+    text-align: center;
+  }
+  header > nav > ul {
+    float: none;
+  }
+}

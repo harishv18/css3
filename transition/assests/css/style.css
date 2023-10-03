@@ -1,0 +1,63 @@
+/* for p1.html */
+.transition {
+  background-color: teal;
+  padding: 20px;
+  margin: 20px;
+  transition: color 20s;
+  /* transition: background-color calc(1s + 14s); */
+}
+.transition:hover {
+  background-color: grey;
+  color: white;
+}
+
+/* for p2.html */
+.bgclip {
+  border: 5px dotted yellow;
+  background-color: red;
+  padding: 20px;
+  transition: 2s;
+  background-clip: content-box;
+  background-clip: padding-box;
+  /* background-clip: border-box; */
+}
+.bgclip:hover {
+  border-radius: 20px;
+  border-color: yellow;
+  text-align: center;
+}
+
+/* for p3.html */
+.common {
+  width: 400px;
+  height: 100px;
+  margin: 20px;
+  background-color: crimson;
+  color: #fff;
+  transition: width 2s;
+}
+.common:hover {
+  width: 100px;
+  background-color: teal;
+}
+#d1 {
+  transition-timing-function: linear;
+}
+#d2 {
+  transition-timing-function: ease-in;
+}
+#d3 {
+  transition-timing-function: ease-out;
+}
+#d4 {
+  transition-timing-function: ease;
+}
+#d5 {
+  transition-timing-function: ease-in-out;
+}
+#d6 {
+  transition-timing-function: steps(6,jump-start);
+}
+#d7 {
+  transition-timing-function: cubic-bezier(0.5,0.7,0.8,0.1);
+}
